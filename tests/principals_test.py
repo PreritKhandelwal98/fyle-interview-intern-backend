@@ -16,7 +16,7 @@ def test_get_assignments(client, h_principal):
 
 def test_grade_assignment_draft_assignment(client, h_principal):
     """
-    failure case: If an assignment is in Draft state, it cannot be graded by principal.
+    failure case: If an assignment is in draft state, it cannot be graded by principal.
     """
     response = client.post(
         '/principal/assignments/grade',
