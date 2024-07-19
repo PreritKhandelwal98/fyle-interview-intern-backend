@@ -1,6 +1,5 @@
 -- Write query to get number of graded assignments for each student:
-SELECT
-STUDENT_ID, COUNT(*) AS GRADED_ASSIGNMENT_COUNT
-FROM ASSIGNMENTS
-WHERE STATE = "GRADED"
-GROUP BY STUDENT_ID
+SELECT student_id, COUNT(*) AS graded_assignments_count
+FROM assignments
+WHERE state = 'GRADED'
+GROUP BY student_id;
